@@ -1,9 +1,13 @@
-import './App.css';
+import "./App.css";
+import SidebarDrawer from "./components/Sidebar/SidebarDrawer"; // Import the Demo component
+import { StyledEngineProvider } from "@mui/material/styles";
 
 function App() {
   return (
     <div>
-      <h1>First React App Check</h1>
+      <StyledEngineProvider injectFirst>
+        <SidebarDrawer />
+      </StyledEngineProvider>
     </div>
   );
 }
