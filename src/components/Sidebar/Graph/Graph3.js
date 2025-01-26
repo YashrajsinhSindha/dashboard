@@ -43,7 +43,6 @@ const Graph3 = () => {
     },
   ];
 
-  const [searchText, setSearchText] = useState("");
   const [filteredData, setFilteredData] = useState(dataSource);
 
   const handleSearch = (value) => {
