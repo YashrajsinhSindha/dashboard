@@ -27,7 +27,7 @@ const Dashboard = () => {
             >
               <MenuItem value={10}>Type1</MenuItem>
               <MenuItem value={20}>Type2</MenuItem>
-              <MenuItem value={30}>Type2</MenuItem>
+              <MenuItem value={30}>Type3</MenuItem>
             </Select>
           </FormControl>
         </Box>
