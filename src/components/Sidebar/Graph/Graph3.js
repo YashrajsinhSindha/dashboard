@@ -5,7 +5,7 @@ import { Table, Input } from "antd";
 import { useState } from "react";
 
 const Graph3 = () => {
-  const [selectedOption, setSelectedOption] = React.useState("first");
+  const [selectedOption, setSelectedOption] = useState("first");
   const { Option } = Select;
   const { Search } = Input;
 
@@ -58,7 +58,7 @@ const Graph3 = () => {
     setSelectedOption(option);
   };
   const handleDropdownChange = (value) => {
-    console.log(`selected ${value}`);
+    // console.log(`selected ${value}`);
     // Add logic to change page based on dropdown selection
   };
 

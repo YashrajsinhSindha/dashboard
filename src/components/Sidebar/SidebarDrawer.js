@@ -21,13 +21,16 @@ import Analyze1 from "./Analyze/Analyze1";
 import Graph1 from "./Graph/Graph1";
 import Graph2 from "./Graph/Graph2";
 import Graph3 from "./Graph/Graph3";
+import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
+import TimelineRoundedIcon from "@mui/icons-material/TimelineRounded";
+import Search from "antd/es/transfer/search";
 
 const NAVIGATION = [
   { segment: "dashboard", title: "Dashboard", icon: <DashboardIcon /> },
   {
     segment: "check",
     title: "Check",
-    icon: <BarChartIcon />,
+    icon: <SearchRoundedIcon />,
     children: [
       { segment: "check1", title: "Check1", icon: <DescriptionIcon /> },
       { segment: "check2", title: "Check2", icon: <DescriptionIcon /> },
@@ -36,7 +39,7 @@ const NAVIGATION = [
   {
     segment: "track",
     title: "Track",
-    icon: <BarChartIcon />,
+    icon: <TimelineRoundedIcon />,
     children: [
       { segment: "track1", title: "Track1", icon: <DescriptionIcon /> },
     ],
@@ -133,7 +136,16 @@ export default function DashboardLayoutBasic() {
       <AppProvider
         navigation={NAVIGATION}
         theme={demoTheme}
-        branding={{ title: <span>Dashboard</span> }}
+        branding={{
+          title: <span>Dashboard</span>,
+          logo: (
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/3/30/React_Logo_SVG.svg"
+              alt="Logo"
+              style={{ height: "24px", marginTop: "7px" }}
+            />
+          ),
+        }}
       >
         <DashboardLayout>
           <Routes>

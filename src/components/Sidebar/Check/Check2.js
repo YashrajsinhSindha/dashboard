@@ -39,9 +39,6 @@ const Check2 = () => {
   return (
     <div className="design_check">
       <div>
-        <h3 style={{ display: "flex", justifyContent: "center" }}>
-          Check2 Page
-        </h3>
         <div style={{ padding: "15px" }}>
           <Card style={{ margin: "auto" }}>
             <div style={{ display: "flex", alignItems: "center" }}>

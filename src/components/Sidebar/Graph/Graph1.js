@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState } from "react";
 import { Table, Card } from "antd";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
@@ -10,9 +10,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 const Graph1 = () => {
-  const [select1, setSelect1] = React.useState("");
-  const [select2, setSelect2] = React.useState("");
-  const [select3, setSelect3] = React.useState("");
+  const [select1, setSelect1] = useState("");
+  const [select2, setSelect2] = useState("");
+  const [select3, setSelect3] = useState("");
 
   const handleChange1 = (event) => {
     setSelect1(event.target.value);
@@ -99,7 +99,7 @@ const Graph1 = () => {
     },
   ];
   const onChange = (pagination, filters, sorter, extra) => {
-    console.log("params", pagination, filters, sorter, extra);
+    // console.log("params", pagination, filters, sorter, extra);
   };
 
   return (

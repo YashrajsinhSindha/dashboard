@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState } from "react";
 import { Card, Row, Col } from "antd";
 import { MenuItem } from "@mui/material";
 import Box from "@mui/material/Box";
@@ -7,7 +7,7 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 
 const Dashboard = () => {
-  const [typeofdashboard, settypeofdashboard] = React.useState("");
+  const [typeofdashboard, settypeofdashboard] = useState("");
 
   const handleChangeOfType = (value) => {
     settypeofdashboard(value);
