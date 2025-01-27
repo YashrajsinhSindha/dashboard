@@ -23,7 +23,6 @@ import Graph2 from "./Graph/Graph2";
 import Graph3 from "./Graph/Graph3";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import TimelineRoundedIcon from "@mui/icons-material/TimelineRounded";
-import Search from "antd/es/transfer/search";
 
 const NAVIGATION = [
   { segment: "dashboard", title: "Dashboard", icon: <DashboardIcon /> },
